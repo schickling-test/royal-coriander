@@ -13,7 +13,7 @@ const DocPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ doc
   const MDXContent = useMemo(() => getMDXComponent(doc.body.code), [doc.body.code])
 
   return (
-    <div>
+    <div data-sb-object-id={}>
       <div style={{ display: 'flex', paddingBottom: 10, borderBottom: '1px solid #eee' }}>
         {navInfo.map(({ path, title }) => (
           <a key={path} href={path} style={{ paddingRight: 6 }}>
