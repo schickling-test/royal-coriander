@@ -21,7 +21,7 @@ const DocPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ doc
           </a>
         ))}
       </div>
-      <h1 data-sb-field-path='titlex'>{doc.title}</h1>
+      <h1 data-sb-field-path='title'>{doc.title}</h1>
       <MDXContent components={mdxComponents} />
     </div>
   )
