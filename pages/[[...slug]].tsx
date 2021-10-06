@@ -16,7 +16,7 @@ const DocPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({ doc
     <div data-sb-object-id={`docs/${doc._raw.sourceFilePath}`}>
       <div style={{ display: 'flex', paddingBottom: 10, borderBottom: '1px solid #eee' }}>
         {navInfo.map(({ path, title, rawPath }) => (
-          <a key={path} href={path} style={{ paddingRight: 6 }} data-sb-object-id={rawPath} data-sb-field-path='titlxe'>
+          <a key={path} href={path} style={{ paddingRight: 6 }} data-sb-object-id={rawPath} data-sb-field-path='titlx'>
             {title}
           </a>
         ))}
