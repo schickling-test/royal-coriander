@@ -33,7 +33,7 @@ export const getStaticProps = ({ params: { slug = [] } }) => {
   const pagePath = slug.join('/')
   const doc = allDocs.find((doc) => doc._raw.flattenedPath === pagePath)
 
-  const navInfo = allDocs.map((_) => ({ title: _.title, path: `/${_._raw.flattenedPath}`, rawPath: `docs/${doc._raw.sourceFilePath}` }))
+  const navInfo = allDocs.map((_) => ({ title: _.title, path: `/${_._raw.flattenedPath}`, rawPath: `docs/${_._raw.sourceFilePath}` }))
 
   return { props: { doc, navInfo } }
 }
